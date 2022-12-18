@@ -1,0 +1,121 @@
+.list-filter{
+    display: flex;
+        flex-wrap: wrap;
+        column-gap: 8px;
+        row-gap: 15px;
+    margin: 0 0 50px 0;
+
+    
+
+    @media (min-width: 768px){
+        justify-content: center;
+        gap: 0;
+        
+    }
+
+    @media (min-width: 1200px){
+        
+    }
+}
+
+.list-producs{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product__meta{
+    border: 1px;
+    border-style: solid;
+    border-color: $border-color;
+    border-top: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+
+}
+.list-producs__item{
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: 480px){
+        width: 450px;
+    }
+
+    @media (min-width: 768px){
+        &:last-child{
+            // text-align: start;
+            margin-left: 8px;
+            // justify-content: left;
+        }
+        width: 354px;
+    }
+
+    @media (min-width: 1200px){
+        width: 370px;
+    }
+}
+
+.product__meta__main-text{
+    color: $h-text-color;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+.product__meta__text{
+    color: $primary-text-color;
+    font-size: 16px;
+    line-height: 1.88;
+}
+.list-producs__link{
+        &:hover, &:focus{
+            box-shadow: 
+        1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+    display: block;
+    box-shadow: none;
+    transition: box-shadow 250ms $timing-function;
+}
+
+.list-producs__link:hover .product__animation,
+.list-producs__link:focus .product__animation{
+    opacity: 1; 
+    transform: translateY(0);
+}
+
+.product__text-animation{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;         
+    color: $primary-white-color;
+    width: 322px;
+    height: 168px;
+}
+
+.product__img{
+    position: relative;
+    overflow: hidden;
+}
+.product__animation{
+        &:hover, &:focus{
+            opacity: 1;
+        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: $background-animation;
+    transition: transform 250ms $timing-function;
+    transform: translateY(100%);
+}

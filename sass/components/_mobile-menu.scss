@@ -1,0 +1,242 @@
+.menu {
+  // display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+
+
+.header__phone-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .header__phone-menu {
+    display: none;
+  }
+}
+
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  // padding-top: 32px;
+  // padding-left: 32px;
+  // padding-right: 332px;
+  // padding-bottom: 332px;
+  display: flex;
+  flex-direction: column;
+  background-color: $primary-white-color;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ;
+}
+.header__site-nav{
+  margin-bottom: 30%;
+  // display: block;
+  // padding: 0;
+}
+.header__site-nav__link{
+  &:hover, &:focus{
+    color: $accent-color;
+    text-decoration: none;
+}
+font-size: 40px;
+position: relative;
+color: $h-text-color;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+text-decoration: none;
+padding: 0;
+transition: color 250ms $timing-function;
+}
+.header__site-nav--current{
+  &::after{
+    display: none;
+  }
+}
+.mobile-menu__auth-nav{
+  margin-bottom: 64px;
+}
+.header__site-nav__item{
+  margin-bottom: 32px;
+}
+.mobile-menu__auth-nav__item{
+    &:last-child{
+      font-size: 24px;
+    }
+  font-size: 34px;
+  margin-bottom: 32px;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.mobile-menu__social-media{
+  
+  display: flex;
+  
+}
+.social-media_item{
+    
+  margin-right: 20px;
+  color: $rgba-logo-blue;
+}
+// .mobile-menu__social-media{}
+.social-media__link{
+  
+  &::after{
+    content: '';
+    
+    border-right: 1px;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    // display: inline- /block;
+    right: -10px;
+    background-color: $rgba-outline;
+    
+    }
+    
+    position: relative;
+  color: $rgba-logo-blue;
+  font-size: 18px;
+}
+.social-media__link_{
+  position: relative;
+  color: $rgba-logo-blue;
+  font-size: 18px;
+}
+
+
+.header__close-menu{
+  position: absolute;
+  top: 16px;
+  right: 80px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-white-color;
+  margin: 0;
+  padding: 0;
+  // background-color: transparent;
+  cursor: pointer;
+  border: none;
+  // border-radius: 50%;
+  outline: none;
+}
+
+
+
+
+// .menu {
+//   display: flex;
+//   padding: 0;
+//   margin: 0;
+//   list-style: none;
+// }
+
+// @media (max-width: 767px) {
+//   .menu {
+//     display: none;
+//   }
+// }
+
+// .menu .link {
+//   padding: 10px;
+//   color: inherit;
+//   text-decoration: none;
+// }
+
+// .menu .link:hover,
+// .menu .link:focus {
+//   text-decoration: underline;
+// }
+
+// .menu-toggle {
+//   min-height: 40px;
+//   min-width: 40px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+//   margin: 0;
+//   padding: 0;
+//   background-color: transparent;
+//   cursor: pointer;
+//   border: none;
+//   border-radius: 50%;
+//   outline: none;
+// }
+
+// @media (min-width: 768px) {
+//   .menu-toggle {
+//     display: none;
+//   }
+// }
+
+// .menu-toggle:hover,
+// .menu-toggle:focus {
+//   background-color: rgba(0, 0, 0, 0.1);
+// }
+
+// .menu-container {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   padding: 32px;
+//   background-color: #3f51b5;
+//   z-index: 999;
+
+//   transform: translateX(100%);
+//   transition: transform 250ms ease-in-out;
+// }
+
+// .menu-container.is-open {
+//   transform: translateX(0);
+// }
+
+// .menu-container .menu-toggle {
+//   position: absolute;
+//   top: 16px;
+//   right: 16px;
+//   color: #fff;
+// }
+
+// .mobile-menu {
+//   padding: 0;
+//   margin: 0;
+//   list-style: none;
+// }
+
+// .mobile-menu .link {
+//   display: block;
+//   padding: 10px;
+//   color: #fff;
+//   text-decoration: none;
+// }

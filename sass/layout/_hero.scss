@@ -1,0 +1,106 @@
+    // hero
+
+    .hero{
+        margin-left: auto;
+        margin-right: auto;
+        color: $primary-white-color;
+        background-color: $bg-color;
+        text-align: center;
+        padding-bottom: 118px;
+        padding-top: 118px;
+        text-align: center;
+        max-height: 400px;
+        background-image:
+        linear-gradient(
+            to right, 
+            $acent-hero-rgba,
+            $acent-hero-rgba),
+        url(../images/Img_sm17@1x.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx){
+                    background-image:
+                    linear-gradient(
+                        to right, 
+                        $acent-hero-rgba,
+                        $acent-hero-rgba),
+                    url(../images/Img_sm17@2x.jpg);
+                }
+
+        @media (min-width: 480px){
+            max-height: 400px;
+        }
+    
+        @media (min-width: 768px){
+            background-image:
+            linear-gradient(
+            to right, 
+            $acent-hero-rgba,
+            $acent-hero-rgba),
+            url(../images/Img_me17@1x.jpg);
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx){
+                    background-image:
+                    linear-gradient(
+                        to right, 
+                        $acent-hero-rgba,
+                        $acent-hero-rgba),
+                    url(../images/Img_me17@2x.jpg);
+                }
+        }
+    
+        @media (min-width: 1200px){
+            max-width: 1600px;
+            max-height: 600px;
+            padding-bottom: 200px;
+            padding-top: 200px;
+            background-image:
+            linear-gradient(
+            to right, 
+            $acent-hero-rgba,
+            $acent-hero-rgba),
+            url(../images/Img_la17@1x.jpg);
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx){
+                    background-image:
+                    linear-gradient(
+                        to right, 
+                        $acent-hero-rgba,
+                        $acent-hero-rgba),
+                    url(../images/Img_la17@2x.jpg);
+                }
+        }
+    }
+    .hero__text{
+        font-family: Roboto;
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: 26px;
+        line-height: 1.61;
+        text-align: center;
+        margin-bottom: 30px;
+        @media (min-width: 480px){
+
+        }
+    
+        @media (min-width: 768px){
+            
+        }
+    
+        @media (min-width: 1200px){
+            font-size: 44px;
+            line-height: 1.36;
+        }
+    }
+    
+   
+    
+    
+    

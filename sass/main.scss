@@ -1,0 +1,39 @@
+// base
+@import "./base/variables";
+@import "./base/_base.scss";
+
+// layout
+@import "./layout/_header.scss";
+@import "./layout/hero";
+@import "./layout/modal-window";
+@import "./layout/features";
+@import "./layout/examples";
+@import "./layout/team";
+@import "./layout/customers";
+@import "./layout/footer";
+@import "./layout/portfolio-main";
+
+// utils
+@import "./utils/visually-hidden";
+
+// components
+@import "./components/buttons";
+@import "./components/logo";
+@import "./components/social-media";
+@import "./components/_mobile-menu"
+
+
+        // @media (min-width: 480px){
+
+        // }
+    
+        // @media (min-width: 768px){
+            
+        // }
+    
+        // @media (min-width: 1200px){
+            
+        // }
+
+
+        

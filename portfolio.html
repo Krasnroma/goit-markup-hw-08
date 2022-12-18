@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css"/>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+  </head>
+  <body>
+    <!--Верхня лінія-->
+    <header class="header">
+  
+      <div class="container header--container">
+        <a href="./index.html" class="logo logo__header"
+          ><span class="header--blue">Web</span
+          ><span class="header--black">Studio</span></a
+        >
+
+        <!-- Мобільне меню -->
+
+        <button
+        class="header__phone-menu js-open-menu "
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+      <svg class="footer-menu-open"
+      width="40" height="40"
+      >
+        <use href="./images/icons.svg#menu"></use>
+      </svg>
+      </button>
+       
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="header__close-menu js-close-menu">
+          <svg class="header__button-close"
+                  width="40" height="40"
+                  >
+                    <use href="./images/icons.svg#close_phone">
+  
+                    </use>
+                  </svg>
+        </button>
+  
+        <ul class=" list header__site-nav">
+          <li class="header__site-nav__item">
+            <a href="./index.html" class="header__site-nav__link header__site-nav--current">Студія</a>
+          </li>
+          <li class="header__site-nav__item">
+            <a href="./portfolio.html" class="header__site-nav__link">Портфоліо</a>
+          </li>
+          <li class="header__site-nav__item"><a href="" class="header__site-nav__link">Контакти</a></li>
+        </ul>
+        
+        <ul class="mobile-menu__auth-nav list">
+          <li class="mobile-menu__auth-nav__item">
+            <a class="contact contact--header " href="tel:+380961111111">
+              
+              +38 096 111 11 11</a>
+          </li>
+          <li class="mobile-menu__auth-nav__item">
+            <a class="contact contact--header" href="mailto:info@devstudio.com">
+              
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-menu__social-media list">
+          <li class="social-media_item">
+            <a class="social-media__link" href="">Instagram</a>
+          </li>
+          <li class="social-media_item">
+            <a class="social-media__link" href="">Twitter</a>
+          </li>
+          <li class="social-media_item">
+            <a class="social-media__link" href="">Facebook</a>
+          </li>
+          <li class="social-media_item">
+            <a class=" social-media__link_" href="">LinkedIn</a>
+          </li>
+        </ul>
+
+      </div>
+        
+        
+        
+
+        <!-- Мобільне меню -->
+        
+        
+
+        
+
+        
+    
+         
+        <nav>
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link site-nav--current">Студія</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
+            </li>
+            <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="auth-nav list">
+          <li class="auth-nav__item">
+            <a class="contact contact--header" href="mailto:info@devstudio.com">
+              <svg width="16" height="12" class="auth-nav__item--svg">
+                <use href="./images/icons.svg#mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <a class="contact contact--header" href="tel:+380961111111">
+              <svg width="10" height="16" class="auth-nav__item--svg">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!--Шапка-->
+    <main>
+      <section class="section portfolio">
+        <div class="container">
+          <h1 class="visually-hidden">Портфоліо</h1>
+
+          <!--Фільтр-->
+          <ul class="list-filter">
+            <li>
+              <button type="button" class="button list-filter__button">Усі</button>
+            </li>
+            <li>
+              <button type="button" class="button list-filter__button">Веб-сайти</button>
+            </li>
+            <li>
+              <button type="button" class="button list-filter__button">Додатки</button>
+            </li>
+            <li><button type="button" class="button list-filter__button">Дизайн</button></li>
+            <li>
+              <button type="button" class="button list-filter__button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <!--Приклади-->
+
+          <ul class="list-producs">
+            <li class="list-producs__item">
+              <a class="list-producs__link" href=""
+                >
+                <div class="product__img">
+                  <img
+                  class="img"
+                  
+                  srcset="
+                ./images/img_sm8@1x.jpg  450w, 
+                ./images/img_sm8@2x.jpg  900w,
+                ./images/img_me8@1x.jpg  354w,
+                ./images/img_me8@2x.jpg  708w,
+                ./images/img_la8@1x.jpg  270w,
+                ./images/img_la8@2x.jpg  540w
+                "
+                sizes="(min-width: 1200px) 270px, 
+                (min-width: 768px) 354px, 
+                (min-width: 480px) 450px, 100vw"
+
+                  alt="Лого ресторана Seafood"
+                  width="450"
+                />
+                <div class="product__animation">
+                  <p class="product__text-animation">Ресурс пропонує комплексні пропозиції 
+                    з різним рівнем функціоналу та сервісів. 
+                    Все це дозволить відвідувачу отримати вичерпні 
+                    відомості про компанію чи приватну особу.</p>
+                </div>
+                </div>
+                <div class="product__meta">
+                  <h2 class="product__meta__main-text">Технокряк</h2>
+                  <p class="product__meta__text">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+
+            <li class="list-producs__item">
+              <a class="list-producs__link" href=""
+                >
+                <div class="product__img">
+                  <img
+                  class="img"
+                  
+                  srcset="
+                ./images/img_sm9@1x.jpg  450w, 
+                ./images/img_sm9@2x.jpg  900w,
+                ./images/img_me9@1x.jpg  354w,
+                ./images/img_me9@2x.jpg  708w,
+                ./images/img_la9@1x.jpg  270w,
+                ./images/img_la9@2x.jpg  540w
+                "
+                sizes="(min-width: 1200px) 270px, 
+                (min-width: 768px) 354px, 
+                (min-width: 480px) 450px, 100vw"
+
+                  alt="Лого ресторана Seafood"
+                  width="450"
+                />
+                <div class="product__animation">
+                  <p class="product__text-animation">Ресурс пропонує комплексні пропозиції 
+                    з різним рівнем функціоналу та сервісів. 
+                    Все це дозволить відвідувачу отримати вичерпні 
+                    відомості про компанію чи приватну особу.</p>
+                </div>
+                </div>
+                <div class="product__meta">
+                  <h2 class="product__meta__main-text">Постер New Orlean vs Golden Star</h2>
+                  <p class="product__meta__text">Дизайн</p>
+                </div></a
+              >
+            </li>
+
+            <li class="list-producs__item">
+              <a class="list-producs__link" href=""
+                >
+                <div class="product__img">
+                  <img
+                  class="img"
+
+                  srcset="
+                ./images/img_sm10@1x.jpg  450w, 
+                ./images/img_sm10@2x.jpg  900w,
+                ./images/img_me10@1x.jpg  354w,
+                ./images/img_me10@2x.jpg  708w,
+                ./images/img_la10@1x.jpg  270w,
+                ./images/img_la10@2x.jpg  540w
+                "
+                sizes="(min-width: 1200px) 270px, 
+                (min-width: 768px) 354px, 
+                (min-width: 480px) 450px, 100vw"
+                  
+                  alt="Лого ресторана Seafood"
+                  width="450"
+                />
+                <div class="product__animation">
+                  <p class="product__text-animation">Ресурс пропонує комплексні пропозиції 
+                    з різним рівнем функціоналу та сервісів. 
+                    Все це дозволить відвідувачу отримати вичерпні 
+                    відомості про компанію чи приватну особу.</p>
+                </div>
+                </div>
+                <div class="product__meta">
+                  <h2 class="product__meta__main-text">Ресторан Seafoodк</h2>
+                  <p class="product__meta__text">Додатот</p>
+                </div></a
+              >
+            </li>
+
+            <li class="list-producs__item">
+              <a class="list-producs__link" href=""
+                >
+                <div class="product__img">
+                  <img
+                  class="img"
+                  
+                  srcset="
+                ./images/img_sm11@1x.jpg  450w, 
+                ./images/img_sm11@2x.jpg  900w,
+                ./images/img_me11@1x.jpg  354w,
+                ./images/img_me11@2x.jpg  708w,
+                ./images/img_la11@1x.jpg  270w,
+                ./images/img_la11@2x.jpg  540w
+                "
+                sizes="(min-width: 1200px) 270px, 
+                (min-width: 768px) 354px, 
+                (min-width: 480px) 450px, 100vw"
+
+                  alt="Лого ресторана Seafood"
+                  width="450"
+                />
+                <div class="product__animation">
+                  <p class="product__text-animation">Ресурс пропонує комплексні пропозиції 
+                    з різним рівнем функціоналу та сервісів. 
+                    Все це дозволить відвідувачу отримати вичерпні 
+                    відомості про компанію чи приватну особу.</p>
+                </div>
+                </div>
+                <div class="product__meta">
+                  <h2 class="product__meta__main-text">Проєкт Prime</h2>
+                  <p class="product__meta__text">Маркетинг</p>
+                </div></a
+              >
+            </li>
+
+            <li class="list-producs__item">
+              <a class="list-producs__link" href=""
+                >
+                <div class="product__img">
+                  <img
+                  class="img"
+                  
+                  srcset="
+                ./images/img_sm12@1x.jpg  450w, 
+                ./images/img_sm12@2x.jpg  900w,
+                ./images/img_me12@1x.jpg  354w,
+                ./images/img_me12@2x.jpg  708w,
+                ./images/img_la12@1x.jpg  270w,
+                ./images/img_la12@2x.jpg  540w
+                "
+                sizes="(min-width: 1200px) 270px, 
+                (min-width: 768px) 354px, 
+                (min-width: 480px) 450px, 100vw"
+
+                  alt="Лого ресторана Seafood"
+                  width="450"
+                />
+                <div class="product__animation">
+                  <p class="product__text-animation">Ресурс пропонує комплексні пропозиції 
+                    з різним рівнем функціоналу та сервісів. 
+                    Все це дозволить відвідувачу отримати вичерпні 
+                    відомості про компанію чи приватну особу.</p>
+                </div>
+                </div>
+                <div class="product__meta">
+                  <h2 class="product__meta__main-text">Проєкт Boxes</h2>
+                  <p class="product__meta__text">Додаток</p>
+                </div></a
+              >
+            </li>
+
+            <li class="list-producs__item">
+              <a class="list-producs__link" href=""
+                >
+                <div class="product__img">
+                  <img
+                  class="img"
+                  
+                  srcset="
+                ./images/img_sm13@1x.jpg  450w, 
+                ./images/img_sm13@2x.jpg  900w,
+                ./images/img_me13@1x.jpg  354w,
+                ./images/img_me13@2x.jpg  708w,
+                ./images/img_la13@1x.jpg  270w,
+                ./images/img_la13@2x.jpg  540w
+                "
+                sizes="(min-width: 1200px) 270px, 
+                (min-width: 768px) 354px, 
+                (min-width: 480px) 450px, 100vw"
+
+                  alt="Лого ресторана Seafood"
+                  width="450"
+                />
+                <div class="product__animation">
+                  <p class="product__text-animation">Ресурс пропонує комплексні пропозиції 
+                    з різним рівнем функціоналу та сервісів. 
+                    Все це дозволить відвідувачу отримати вичерпні 
+                    відомості про компанію чи приватну особу.</p>
+                </div>
+                </div>
+                <div class="product__meta">
+                  <h2 class="product__meta__main-text">Inspiration has no Borders</h2>
+                  <p class="product__meta__text">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+
+            <li class="list-producs__item">
+              <a class="list-producs__link" href=""
+                >
+                <div class="product__img">
+                  <img
+                  class="img"
+                  
+                  srcset="
+                  ./images/img_sm14@1x.jpg  450w, 
+                  ./images/img_sm14@2x.jpg  900w,
+                  ./images/img_me14@1x.jpg  354w,
+                  ./images/img_me14@2x.jpg  708w,
+                  ./images/img_la14@1x.jpg  270w,
+                  ./images/img_la14@2x.jpg  540w
+                  "
+                  sizes="(min-width: 1200px) 270px, 
+                  (min-width: 768px) 354px, 
+                  (min-width: 480px) 450px, 100vw"
+
+                  alt="Лого ресторана Seafood"
+                  width="450"
+                />
+                <div class="product__animation">
+                  <p class="product__text-animation">Ресурс пропонує комплексні пропозиції 
+                    з різним рівнем функціоналу та сервісів. 
+                    Все це дозволить відвідувачу отримати вичерпні 
+                    відомості про компанію чи приватну особу.</p>
+                </div>
+                </div>
+                <div class="product__meta">
+                  <h2 class="product__meta__main-text">Видання Limited Edition</h2>
+                  <p class="product__meta__text">Дизайн</p>
+                </div></a
+              >
+            </li>
+
+            <li class="list-producs__item">
+              <a class="list-producs__link" href=""
+                >
+                <div class="product__img">
+                  <img
+                  class="img"
+                  
+                  srcset="
+                ./images/img_sm15@1x.jpg  450w, 
+                ./images/img_sm15@2x.jpg  900w,
+                ./images/img_me15@1x.jpg  354w,
+                ./images/img_me15@2x.jpg  708w,
+                ./images/img_la15@1x.jpg  270w,
+                ./images/img_la15@2x.jpg  540w
+                "
+                sizes="(min-width: 1200px) 270px, 
+                (min-width: 768px) 354px, 
+                (min-width: 480px) 450px, 100vw"
+
+                  alt="Лого ресторана Seafood"
+                  width="450"
+                />
+                <div class="product__animation">
+                  <p class="product__text-animation">Ресурс пропонує комплексні пропозиції 
+                    з різним рівнем функціоналу та сервісів. 
+                    Все це дозволить відвідувачу отримати вичерпні 
+                    відомості про компанію чи приватну особу.</p>
+                </div>
+                </div>
+                <div class="product__meta">
+                  <h2 class="product__meta__main-text">Проєкт LAB</h2>
+                  <p class="product__meta__text">Маркетин</p>
+                </div></a
+              >
+            </li>
+
+            <li class="list-producs__item">
+              <a class="list-producs__link" href=""
+                >
+                <div class="product__img">
+                  <img
+                  class="img"
+                  
+                  srcset="
+                ./images/img_sm16@1x.jpg  450w, 
+                ./images/img_sm16@2x.jpg  900w,
+                ./images/img_me16@1x.jpg  354w,
+                ./images/img_me16@2x.jpg  708w,
+                ./images/img_la16@1x.jpg  270w,
+                ./images/img_la16@2x.jpg  540w
+                "
+                sizes="(min-width: 1200px) 270px, 
+                (min-width: 768px) 354px, 
+                (min-width: 480px) 450px, 100vw"
+
+                  alt="Лого ресторана Seafood"
+                  width="450"
+                />
+                <div class="product__animation">
+                  <p class="product__text-animation">Ресурс пропонує комплексні пропозиції 
+                    з різним рівнем функціоналу та сервісів. 
+                    Все це дозволить відвідувачу отримати вичерпні 
+                    відомості про компанію чи приватну особу.</p>
+                </div>
+                </div>
+                <div class="product__meta">
+                  <h2 class="product__meta__main-text">Growing Business</h2>
+                  <p class="product__meta__text">Додаток</p>
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--Підвал-->
+    
+    <footer>
+      <div class="container footer--container">
+        <!-- <div class="footer-position-tablet"> -->
+
+          <div class="footer__main-information">
+            <a href="./index.html" class="logo logo__footer"
+              ><span class="footer--blue">Web</span
+              ><span class="footer--white">Studio</span></a
+            >
+  
+            <address class="footer-adress">
+              <ul class="footer-adress__list">
+                <li class="footer__adress-list">
+                  <a class="footer-adress__link" href="https://goo.gl/maps/dVTdYjMpr15HdF8F8"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="adress-list">
+                  <a class="footer-adress__link footer-adress__link--mail" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="adress-list">
+                  <a class="footer-adress__link footer-adress__link--mail" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+        <!-- </div> -->
+
+        <div class="footer__plus">
+          <p class="footer__plus__main-text">ПРИЄДНУЙТЕСЬ</p>
+          <ul class="social-media footer__social-media">
+            <li class="footer__social-media__item">
+              <a class="footer__social-media__link" href="">
+                <svg width="20" height="20" class="svg-footer">
+                  <use
+                    class="use-footer"
+                    href="./images/icons.svg#instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-media__item">
+              <a class="footer__social-media__link" href="">
+                <svg width="20" height="20" class="svg-footer">
+                  <use
+                    class="use-footer"
+                    href="./images/icons.svg#twitter"
+                  ></use>
+                </svg>
+              </a>
+              <li class="footer__social-media__item">
+                <a class="footer__social-media__link" href="">
+                  <svg width="20" height="20" class="svg-footer">
+                    <use
+                      class="use-footer"
+                      href="./images/icons.svg#facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-media__item">
+                <a class="footer__social-media__link" href="">
+                  <svg width="20" height="20" class="svg-footer">
+                    <use
+                      class="use-footer"
+                      href="./images/icons.svg#linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+          </ul>
+        </div>
+
+        <div class="footer__field-position">
+          <p class="footer__plus__main-text">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+
+           <form class="footer__extra-field">
+             <div class="footer__field">
+              <label class="footer__plus-email" for="footer__field__enter"></label>
+              <input class="footer__field__enter" type="email" name="email" id="email-footer" placeholder="E-mail">
+              </div>
+             <div class="footer__confirm">
+               <button class="button footer__button footer__button-position">Підписатися
+                 <svg
+                 class="footer__svg-plus"
+                 width="24" height="24"
+                 >
+                   <use
+                   class=""
+                   href="./images/icons.svg#send"
+                   >
+                   </use>
+                 </svg>
+               </button>
+              </div>
+            </div>
+        </form>
+
+      </div>
+    </footer>
+
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

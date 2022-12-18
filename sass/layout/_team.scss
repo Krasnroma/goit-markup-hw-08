@@ -1,0 +1,99 @@
+.team{
+    background-color: $team-bgd;
+ }
+ .team__list{
+    // &:last-child{
+    //     margin-bottom: 0;
+    //  }
+     margin: 0;
+    @media (min-width: 480px){
+            // &:last-child{
+            //    margin-bottom: 0;
+            // }
+        
+    }
+
+    @media (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media (min-width: 1200px){
+            &:last-child{
+               margin-right: 0;
+            }
+        
+        flex-wrap: nowrap;
+        gap: 0;
+
+    }
+ }
+ .team__list__item{
+    
+     border-radius: 0px 0px 4px 4px;
+     background-color: $primary-white-color;
+     box-shadow: 
+         0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+         margin-bottom: 30px;
+         margin-left: auto;
+         margin-right: auto;
+        @media (min-width: 480px){
+            max-width: 450px;
+        }
+    
+        @media (min-width: 768px){
+            max-width: 354px;
+            margin-bottom: 0;
+        }
+    
+        @media (min-width: 1200px){
+            &:last-child{
+                margin-right: 0;
+             }
+            max-width: 270px;
+            margin-right: 30px;
+        }
+ }
+ .team__main-text{
+     color: $h-text-color;
+     font-size: 36px;
+     line-height: 1.16;
+     text-align: center;
+     margin-bottom: 50px;
+ }
+ 
+ .team__text-people{     
+     @media (min-width: 480px){
+        padding: 30px 122px ;
+    }
+
+    @media (min-width: 768px){
+        padding: 30px 74px ;
+    }
+
+    @media (min-width: 1200px){
+        padding: 30px 32px;
+    }
+ }
+ .team__text-people__name{
+     color: $h-text-color;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 1.18;
+     padding-bottom: 10px;
+     text-align: center;
+ }
+ 
+ .team__text-people__position{
+     font-size: 16px;
+     line-height: 1.18;
+     text-align: center;
+     padding-top: 0;
+     padding-bottom: 16px;
+     margin: 0;
+ }
+ 
+ 
