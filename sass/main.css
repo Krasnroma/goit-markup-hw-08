@@ -786,14 +786,15 @@ a {
 }
 
 .customers-example {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 480px) {
   .customers-example {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px;
@@ -809,7 +810,7 @@ a {
 }
 
 .customers-example__item {
-  width: 210px;
+  width: 208px;
   height: 92px;
   border: 1px;
   -webkit-box-align: center;
