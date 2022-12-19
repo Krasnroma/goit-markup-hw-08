@@ -1,10 +1,9 @@
 footer{
     background-color: $bg-color;
-    @media (min-width: 480px){
+
         text-align: center;
         align-items: center;
         padding: 60px 0;
-    }
     
     @media (min-width: 768px){
     
@@ -18,9 +17,7 @@ footer{
     margin: 0 auto;
     align-items: baseline;
     justify-content: space-between;
-    @media (min-width: 480px){
-        
-    }
+    
     
     @media (min-width: 768px){
         padding: 0 76px;
@@ -39,14 +36,8 @@ footer{
     }
 }
 .footer__main-information{
-    @media (min-width: 480px){
         margin-bottom: 60px;
-    }
-    
-    @media (min-width: 768px){
-    
-    }
-    
+
     @media (min-width: 1200px){
         margin-right: 70px;
     }
@@ -80,20 +71,11 @@ footer{
     align-items: center;
     text-align: center;
     justify-content: center;
-    @media (min-width: 480px){
-        
-        margin-bottom: 60px;
-    }
-    
-    @media (min-width: 768px){
-        // &:first-child{
-        //     margin-right: 76px;
-        // }
-    }
+    margin-bottom: 60px;
+  
     
     @media (min-width: 1200px){
         margin-bottom: 0;
-        // margin-right: 93px;
     }
     
 }
@@ -107,9 +89,7 @@ footer{
     
     color: $rgba-logo-white;
     margin-bottom: 20px;
-    @media (min-width: 480px){
-        text-align: center;
-    }
+    text-align: center;
     
     @media (min-width: 768px){
     
@@ -128,14 +108,7 @@ footer{
 }
 
 .footer__extra-field{
-    @media (min-width: 480px){
-        
-    }
-
-    @media (min-width: 768px){
-        
-    }
-
+    justify-content: center;
     @media (min-width: 1200px){
         display: flex;
         float: inline;
@@ -145,11 +118,13 @@ footer{
     &:hover, &:focus{
         outline: $border-email-color-plus;
     }
-    width: 434px;
+    width: 300px;
     height: 48px;
     padding: 0 0 0 16px;
     background-color: $bg-color;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px;
     border-style: solid; 
     border-color: $border-email-color-plus;
@@ -164,6 +139,9 @@ footer{
     letter-spacing: 0.03em;
     color: $adress-color;
 
+    @media (min-width: 480px){
+        width: 434px;
+    }
     @media (min-width: 1200px){
         width: 342px;
     }
@@ -185,10 +163,6 @@ footer{
 }
 
 .footer__field-position{
-    @media (min-width: 480px){
-        
-    }
-
     @media (min-width: 768px){
         margin-left: auto;
         margin-right: auto;

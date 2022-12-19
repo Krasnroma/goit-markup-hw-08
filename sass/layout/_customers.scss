@@ -8,11 +8,8 @@
 
 
 .customers-example{
-
     margin: 0;
     padding: 0;
-
-
     @media (min-width: 480px){
         display: flex;
         flex-wrap: wrap;
@@ -37,7 +34,11 @@
     transition: border-color 250ms $timing-function;
     border-radius: 4px;
     margin-right: auto;
-    margin-left: auto;  
+    margin-left: auto;
+    margin-bottom: 30px;  
+    @media (min-width: 480px){
+        margin-bottom: 0;
+    }
     @media (min-width: 768px){
         width: 226px;
     }

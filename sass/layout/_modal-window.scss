@@ -23,7 +23,7 @@
         0px 1px 1px rgba(0, 0, 0, 0.14), 
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    min-width: 450px;
+    width: auto;
     max-width: 528px;
     max-height: 550px; 
     background-color: $background-modal-window;
@@ -32,7 +32,8 @@
     text-align: center;
     transform: translate(-50%, -50%) scale(0.8);
     @media (min-width: 480px){
-
+        .modal-window{
+            min-width: 450px;}
     }
 
     @media (min-width: 768px){
